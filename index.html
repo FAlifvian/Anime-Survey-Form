@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaYear</title>
+    <meta name="description" content="A survey form to gather information about favorite genre for each anime fans">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="main-body">
+        <header>
+            <h1>Anime Watchers Survey</h1>
+            <p id="description">Each anime has its genre. Tell us what is your favorite anime genre.</p>
+        </header>
+        <main>
+            <section>
+                <form action="#" method="post">
+                    <article class="form-item">
+                        <label class="form-label" for="fans-name">Name:</label>
+                        <input id="fans-name" class="form-answer" type="text" name="fans-name" placeholder="E.g. Graham Bell" required>
+                    </article>
+                    <article class="form-item">
+                        <label class="form-label" for="fans-email">Email:</label>
+                        <input id="fans-email" class="form-answer" type="email" name="fans-email" placeholder="E.g. Grahambell@example.com" required>
+                    </article>
+                    <article class="form-item">
+                        <label class="form-label" for="fans-age">Age:</label>
+                        <input id="fans-age" class="form-answer" type="number" name="fans-age" placeholder="E.g. 15" min="10" max="100" required>
+                    </article>
+                    <article class="form-item">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-label">How can you describe yourself as anime enjoyer?</legend>
+                            <select id="dropdown" class="form-answer"  name="person-type" required>
+                                <option value="">(Select one that apply)</option>
+                                <option value="casual">Casual Enjoyer (Watch an anime for only some occasion)</option>
+                                <option value="hobby">Hobbyst (Watch an anime is a must at least once every week)</option>
+                                <option value="otaku">Otaku (Watch an anime is a must for once every three days)</option>
+                                <option value="maniac">Otaku MANIAC (Anime is life, I will gone dead if I dont watch at least one in a day)</option>
+                            </select>
+                        </fieldset>
+                    </article> 
+                    <article class="form-item">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-label">What is your gender?</legend>
+                            <div class="form-radio">
+                                <input type="radio" id="male" name="person-democracy" value="male" checked required> 
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="female" name="person-democracy" value="female"> 
+                                <label for="female">Female</label>
+                            </div>
+                            <div id="form-radio-last" class="form-radio">
+                                <input type="radio" id="others" name="person-democracy" value="others">
+                                <label for="others">Rather not tell</label>                       
+                            </div>
+                        </fieldset>
+                    </article>
+                    <article class="form-item">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-label">Select anime genre that you like to watch (check box that apply):</legend>
+                            <label class="form-checkbox"><input type="checkbox" name="anime-genre" value="action"> Action</label>
+                            <label class="form-checkbox"><input type="checkbox" name="anime-genre" value="adventure"> Adventure</label>
+                            <label class="form-checkbox"><input type="checkbox" name="anime-genre" value="fantasy"> Fantasy</label>
+                            <label class="form-checkbox"><input type="checkbox" name="anime-genre" value="isekai"> Isekai</label>
+                            <label class="form-checkbox"><input type="checkbox" name="anime-genre" value="romance"> Romance</label>
+                            <label id="form-checkbox-last" class="form-checkbox"><input type="checkbox" name="anime-genre" value="tragedy"> Tragedy</label>                            
+                        </fieldset>
+                    </article> 
+                    <article class="form-item">
+                        <label for="favorite-anime" class="form-label">Tell us about your favorite anime name:</label>
+                        <textarea id="favorite-anime" class="form-answer form-textarea" minlength="1" maxlength="100" placeholder="E.g. Attack on Titan, Naruto, One Piece, Hunter x Hunter...."></textarea>
+                    </article>
+                    <input class="form-submit" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

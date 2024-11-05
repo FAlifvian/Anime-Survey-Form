@@ -1,0 +1,101 @@
+* {
+    font-size: 10px;
+    font-family: serif;
+}
+
+body {
+    margin: 0;
+    padding: 3rem 0 4rem 0;
+    background-image: url(img/image1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-body {
+    width: 50%;    
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.8;
+    padding: 1.5rem 2.5rem;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.form-item {
+    margin-bottom: 2.25rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-answer {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.form-answer option {
+    font-size: 1.2rem;
+}
+
+.form-fieldset {
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-radio {
+    margin: 1.5rem 0;
+}
+
+.form-radio input[type="radio"] {
+    vertical-align: top;
+}
+
+.form-radio label{
+    font-size: 1.2rem;
+}
+
+#form-radio-last, #form-checkbox-last {
+    margin-bottom: 0;
+}
+
+.form-checkbox {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.form-textarea {
+    height: 50px;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+.form-submit {
+    padding: 1rem;
+    background-color: rgb(214, 105, 178);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.form-submit:hover{
+    background-color: rgb(218, 174, 203);
+}
